@@ -1,0 +1,61 @@
+
+# el = driver.find_element(By.NAME, "username")
+# el.send_keys("test")
+# el.send_keys(Keys.RETURN)
+
+
+try:
+    element=WebDriverWait(driver,20).until(
+        EC.presence_of_element_located((By.NAME,"username"))
+    )
+    print("encontre login")
+    element.send_keys("pinkdestinyhot")
+    element.send_keys(Keys.RETURN) #enter
+
+    #counter=counter+1
+
+    # element=WebDriverWait(driver,10).until(
+    #     EC.presence_of_element_located((By.ID,"sow-button-19310003"))
+    # )
+    # element.click()
+    # counter=counter+1
+
+    # for x in range(0, counter):
+    #     driver.back()
+
+    # for y in range(0, counter):
+    #     driver.forward()
+
+except Exception as e:
+    print(e)
+    driver.quit()
+
+
+# username = driver.find_element_by_id("loginUsername")
+# username.send_keys("pinkdestinyhot")
+
+# password = driver.find_element_by_id("loginPassword")
+# password.send_keys("Zaidi-123")
+# password.send_keys(Keys.RETURN) #Enter
+
+# search = driver.find_element_by_name("q")
+# search.send_keys("sellingnudes")
+# search.send_keys(Keys.RETURN) #Enter
+
+# time.sleep(30)
+
+#print(driver.page_source)
+
+#time.sleep(120)
+
+#driver.quit()
+
+This worked
+#driver.get(r"https://www.reddit.com/login/?dest=https%3A%2F%2Fwww.reddit.com%2F")
+#username_in = driver.find_element_by_class_name("AnimatedForm__textInput")
+# WebDriverWait(driver, 20).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH,"//iframe[starts-with(@src, 'https://www.reddit.com/login')]")))
+# WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, "//input[@id='loginUsername']"))).send_keys(username)
+# driver.find_element(By.XPATH, "//input[@id='loginPassword']").send_keys(password)
+# driver.find_element(By.XPATH, "//button[@class='AnimatedForm__submitButton m-full-width']").click()
+
+# pass_in.send_keys(Keys.ENTER)
