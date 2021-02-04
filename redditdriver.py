@@ -25,8 +25,8 @@ print(driver.title)
 login=driver.find_element_by_link_text("Log In")
 login.click()
 
-username = "zergdeveloper"          # Enter your username
-password = "Zaidi-123"              # Enter your password
+username = ""          # Enter your username
+password = ""              # Enter your password
 
 def slow_typing(element, text):
     for character in text: 
